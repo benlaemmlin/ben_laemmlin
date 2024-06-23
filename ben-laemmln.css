@@ -1,0 +1,383 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #577C78;
+}
+header {
+    background-color: #2F4F4F;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+header h1 {
+    margin: 0;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    font-size: 25px;
+    margin-right: 20px;
+}
+nav li {
+    margin-left: 20px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+}
+.container {
+
+    margin: auto;
+}
+section {
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+#welcome {
+    background-color: #577C78;
+    text-align: center;
+    color: white;
+}
+#welcome img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+#about, #portfolio, #contact {
+    background-color: #8AA6A3;
+
+}
+
+#skills, #contact{
+    background-color: #577C78;
+}
+
+#about img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+#skills .skill {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+#skills .skill span {
+    width: 100px;
+}
+#skills .skill .progress {
+    margin-top: 60px;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 100%;
+    height: 20px;
+    background-color: #ddd;
+    position: relative;
+    border-radius: 10px;
+}
+
+.titel{
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+}
+
+.skillTitle{
+    margin-left: 50px;
+    padding-top: 60px;
+    color: white;
+    font-weight: 600;
+}
+
+#skills .skill .progress .progress-bar {
+    height: 100%;
+    background-color: #88faa4;
+    position: absolute;
+    border-radius: 10px;
+}
+.portfolio-item {
+    margin-left: 0px;
+    background-color: #B0C4DE;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.link::after,
+  .link::before {
+    content: "";
+    width: 0%;
+    height: 5px;
+    transition: 0.5s;
+    margin-bottom: 60px;
+    margin-top: 60px;
+    padding-bottom: 0px;
+  }
+
+  .link:hover::after,
+  .link:hover::before {
+    width: 100%;
+  }
+
+  .Instagram {
+    font-size: 20px;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+  }
+
+  .Instagram:hover {
+    letter-spacing: 2px;
+  }
+
+  .Instagram:hover .secondHalfInstagram {
+    color: black;
+  }
+
+  .Twitter {
+    font-size: 20px;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+
+  .Twitter:hover {
+    letter-spacing: 2px;
+  }
+
+  .link::after,
+.link::before {
+  content: "";
+  width: 0%;
+  height: 5px;
+  background: #000000;
+  display: block;
+  transition: 0.5s;
+  margin-bottom: 60px;
+  margin-top: 60px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+.link{
+    padding-left: 0px;
+}
+
+.link:hover::after,
+.link:hover::before {
+  width: 100%;
+}
+
+.Instagram {
+  text-align: center;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  background-color: black;
+  background-image: linear-gradient(to right, rgb(214, 65, 214), yellow);
+  box-shadow: inset 0 0 0 0 white, inset 0 0 0 0 black;
+  transition: ease-out 0.3s;
+  outline: none;
+}
+
+.Instagram:hover {
+  box-shadow: inset -200px 0px 0 -100px white, inset 200px 0px 0 -100px black;
+  color: white;
+}
+
+.Instagram:hover .secondHalfInstagram {
+  color: black;
+}
+
+.Twitter {
+  text-align: center;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  background-color: black;
+  box-shadow: inset 0 -50px 0 -25px rgb(59, 154, 225),
+    inset 0 50px 0 -25px rgb(59, 154, 225);
+  transition: ease-out 0.3s;
+  outline: none;
+}
+
+.Twitter:hover {
+  box-shadow: inset 0 0 0 0 rgb(59, 154, 225), inset 0 0 0 0 rgb(59, 154, 225);
+  color: rgb(0, 0, 0);
+}
+
+button.Instagram {
+    background-color: #E1306C;
+    color: white;
+}
+
+button.Twitter {
+    background-color: #1DA1F2;
+    color: white;
+    margin-top: 0px;
+    margin-left: 20px;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0; 
+    padding-bottom: -100px;
+}
+
+.form{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.input{
+    border-radius: 10px;
+}
+
+
+
+.inputNachricht{
+    border-radius: 10px;
+    margin-right: 40px;
+}
+
+.info-box {
+    border-radius: 10px;
+    background-color: #2F4F4F;
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+ /* 250px entspricht der kombinierten Marge (200px rechts + 50px links) */
+    text-align: center;
+    margin-right: 250px;
+    margin-left: 250px;
+}
+
+.card {
+    background-color: #eceff1;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    width: 300px; /* Breite der Karte */
+    margin: 10px; /* Abstand zwischen den Karten */
+    display: flex; /* Flexbox für die Karten-Inhalte */
+    flex-direction: column; /* Inhalte vertikal anordnen */
+    align-items: center; /* Inhalte horizontal zentrieren */
+}
+
+.card img, .card video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Abgerundete Ecken für Bilder und Videos */
+    margin-bottom: 10px; /* Abstand unter den Bildern und Videos */
+}
+
+.content {
+    text-align: center; /* Text zentrieren */
+    padding: 20px;
+}
+
+.content h2 {
+    margin-top: 0;
+    color: #00796b;
+}
+
+.content p {
+    margin-bottom: 0;
+}
+
+#portfolio .container {
+    max-width: 1200px; /* Maximale Breite des Inhalts */
+    margin: 0 auto; /* Zentrierung des Containers */
+    padding: 20px; /* Abstand um den Container herum */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Inhalte zentrieren */
+}
+
+.video {
+    width: 20vw;
+    height: auto; /* Oder eine feste Höhe in Pixeln setzen */
+}
+
+.card {
+    background-color: #eceff1;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    margin: 10px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.content {
+    padding: 20px;
+}
+
+.content h2 {
+    margin-top: 0;
+    color: #00796b;
+}
+
+.content p {
+    margin-bottom: 0;
+}
+
+.text {
+    width: 60%; /* Breite des Textblocks */
+  }
+
+  .image {
+    width: 35%; /* Breite des Bildes */
+  }
+
+  .imgAboutMe{
+    max-width: 500px; /* Bildbreite auf 100% des Containers begrenzen */
+    display: block; /* Als Blockelement anzeigen */
+    border-radius: 5px; /* Optional: Abgerundete Ecken für das Bild */
+  }
+  .content-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start; /* Optional: Text oben ausrichten */
+  }
+
+  .form {
+    width: 800px; /* Beispiel für eine Breitenbeschränkung */
+    margin: auto; /* Zentriert das Formular horizontal */
+  }
+  
+  .input, .inputNachricht {
+    width: 100%; /* Füllt die gesamte Breite des Container-Elements */
+    box-sizing: border-box; /* Berücksichtigt Padding und Border in der Breite */
+    margin-bottom: 10px; /* Abstand zwischen den Elementen */
+  }
+  
+  .submit {
+    width: 100%; /* Füllt die gesamte Breite des Container-Elements */
+    box-sizing: border-box; /* Berücksichtigt Padding und Border in der Breite */
+  }
+  .submit{
+    border-radius: 10px;
+    color: #000000;
+    background-color: #88faa4;
+    margin-top: 20px;
+}
+.imgAboutMe {
+    display: block; /* Als Blockelement anzeigen */
+    margin: 0 auto; /* In der Mitte des Containers zentrieren */
+  }

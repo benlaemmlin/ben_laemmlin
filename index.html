@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html class="html" lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ben Lämmli - Persönliche Webseite</title>
+    <link rel="stylesheet" href="ben-laemmln.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Ben Lämmlin</h1>
+      <nav>
+        <div class="burger" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <ul class="navigation">
+          <li><a href="#welcome">Home</a></li>
+          <li><a href="#about">Über mich</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <section id="welcome">
+        <img src="home.jpg" alt="Ben Lämmli" />
+        <h2>Willkommen Zur Webseite Von Ben Lämmlin</h2>
+      </section>
+      <section id="about">
+        <h2 class="titel">Über Mich</h2>
+        <div class="content-1">
+          <div class="text">
+            <p>
+              Schon seit meiner Kindheit habe ich mich für Technik begeistert. Ich
+              wollte verstehen, wie Dinge funktionieren, sie reparieren, meine
+              Spielzeuge auseinandernehmen, um zu verstehen, wie sie arbeiten. Diese
+              Neugierde führte mich zu einem Informatikstudium, das ich 2017
+              erfolgreich abgeschlossen habe.
+            </p>
+            <p>
+              2017 habe ich meinen ersten Miniatur-Roboter gebaut, der mir eine
+              Auszeichnung auf einer Technologiemesse eingebracht hat. Seitdem habe
+              ich an zahlreichen Projekten gearbeitet, sowohl im beruflichen als
+              auch im privaten Bereich.
+            </p>
+            <p>
+              2020 habe ich mein erstes Game veröffentlicht, das auf HTML, CSS und
+              JavaScript basiert und mir viele positive Rückmeldungen eingebracht
+              hat.
+            </p>
+            <p>
+              Schließlich habe ich 2022 die Lehre als Applikationsentwickler bei der
+              Firma Frontify angetreten.
+            </p>
+          </div>
+          <div class="image">
+            <img class="imgAboutMe" src="mich.jpg" alt="Ben Lämmlin" />
+          </div>
+        </div>
+      </section>
+      <section id="skills">
+        <h2 class="titel">Skills</h2>
+        <div class="skill">
+          <span class="skillTitle">JavaScript</span>
+          <div class="progress">
+            <div class="progress-bar" style="width: 80%"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <span class="skillTitle">HTML</span>
+          <div class="progress">
+            <div class="progress-bar" style="width: 90%"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <span class="skillTitle">CSS</span>
+          <div class="progress">
+            <div class="progress-bar" style="width: 85%"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <span class="skillTitle">SQL</span>
+          <div class="progress">
+            <div class="progress-bar" style="width: 60%"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <span class="skillTitle">PHP</span>
+          <div class="progress">
+            <div class="progress-bar" style="width: 50%"></div>
+          </div>
+        </div>
+      </section>
+      <section id="portfolio">
+        <h2 class="titel">Portfolio</h2>
+        <div class="container">
+            <div class="card">
+                <video class="video" src="video.mp4" autoplay loop muted controls>
+                    Dein Browser unterstützt das Video-Tag nicht.
+                </video>
+                <div class="content">
+                    <h2>Days on Earth</h2>
+                    <p>Das war meine erste Webseite, auf der ich mit HTML, CSS und JavaScript gearbeitet habe. Dort kann man seinen Geburtstag berechnen und sehen, wie viele Tage, Monate und Sekunden man schon auf der Welt ist.</p>
+                </div>
+            </div>
+    
+            <div class="card">
+                <img src="place.png" alt="R-Place Image">
+                <div class="content">
+                    <h2>R-Place</h2>
+                    <p>Das war meine zweite Webseite, auf der ich mit HTML, CSS, SQL, PHP und JavaScript gearbeitet habe. Es handelt sich um ein riesiges Canvas, auf dem viele Leute zeichnen konnten. Im Grunde genommen habe ich einfach r/place nachgebaut, jedoch mit meinen eigenen Regeln und Verbesserungen.</p>
+                </div>
+            </div>
+    
+            <div class="card">
+                <img src="blakjack.png" alt="Blackjack Image">
+                <div class="content">
+                    <h2>Blackjack</h2>
+                    <p>Das ist mein drittes Projekt, an dem ich gerade arbeite. Ich nutze HTML, CSS, SQL, PHP und JavaScript. Ich bin besonders fasziniert von der Herausforderung, die Interaktivität und Komplexität von Blackjack mithilfe von JavaScript und PHP umzusetzen. Mein Ziel ist es, eine benutzerfreundliche und unterhaltsame Online-Version dieses klassischen Spiels zu entwickeln.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+      <section id="contact">
+        <h2 class="titel">Kontakt</h2>
+
+        <p class="info-box">
+            Haben Sie Fragen zu meiner Arbeit oder möchten Sie mit mir zusammenarbeiten? 
+            Ich freue mich darauf, von Ihnen zu hören! 
+            Nutzen Sie das nebenstehend Formular, um mir eine Nachricht zu senden, oder kontaktieren Sie mich direkt über die angegebenen Kontaktdaten.<br><br>
+            E-Mail: <a href="mailto:benlaemmlin@gmail.com">benlaemmlin@gmail.com</a><br>
+            Telefon: +41 79 643 92 29
+        </p>
+
+        <form class="form">
+            <label for="name">Name:</label>
+            <br>
+            <input class="input" id="name" type="text" placeholder="Name" required />
+            <br>
+            
+            <label for="email">E-Mail:</label>
+            <br>
+            <input class="input" id="email" type="email" placeholder="E-Mail" required />
+            <br>
+            
+            <label for="subject">Betreff:</label>
+            <br>
+            <input class="input" id="subject" type="text" placeholder="Betreff" required />
+            <br>
+            
+            <label for="message">Nachricht:</label>
+            <br>
+            <textarea class="inputNachricht" id="message" placeholder="Nachricht" rows="5" required></textarea>
+            <br>
+            
+            <button class="submit" type="submit">Senden</button>
+          </form>
+          
+
+      <ul class="link">
+        <lu class="links">
+          <button
+            class="Instagram"
+            onclick="window.open('https://www.instagram.com/ben_laemmlin/', '_blank')"
+          >
+            Insta<span class="secondHalfInstagram">gram</span>
+          </button>
+          <button
+            class="Twitter"
+            onclick="window.open('https://x.com/BLaemmlin', '_blank')"
+          >
+            Twitter / X
+          </button>
+        </lu>
+      </ul>
+    </section>
+    </div>
+  </body>
+</html>
